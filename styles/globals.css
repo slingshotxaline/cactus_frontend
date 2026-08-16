@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-500: #dc2626;
+}
+
+body {
+  @apply bg-white text-gray-900 antialiased;
+}
