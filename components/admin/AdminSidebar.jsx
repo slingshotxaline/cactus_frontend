@@ -100,18 +100,18 @@ function NavLink({ item, active, onClick }) {
 function SidebarContent({ pathname, onNavigate }) {
   return (
     <>
-      <Link href="/" className="block shrink-0 px-3">
-        {/* <Image
-          src="/assets/logo/logo (2).png"
+      <Link href="/" className="block shrink-0 px-1">
+        <Image
+          src="/assets/logo/Cactus Logo-White.png"
           alt="Enterprise Store"
           width={180}
           height={50}
           priority
-          className="h-9 w-auto"
-        /> */}
+          className="h-full w-auto"
+        />
       </Link>
-      <p className="text-3xl text-white font-bold">CACTUS</p>
-      <p className="text-xl text-white font-bold ml-4">Clothing</p>
+      {/* <p className="text-3xl text-white font-bold">CACTUS</p> */}
+      {/* <p className="text-xl text-white font-bold ml-4">Clothing</p> */}
 
       {/* <div className="mb-5 mt-3 px-3 text-lg font-bold text-brand-500">
         Admin
