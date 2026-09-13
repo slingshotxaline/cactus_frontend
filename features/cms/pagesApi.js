@@ -17,8 +17,12 @@ export const pagesApi = apiSlice.injectEndpoints({
       invalidatesTags: ["Page"],
     }),
     listBanners: builder.query({
-      query: () => "/banners",
+      query: () => ({ url: "/banners", params: { includeInactive: true } }),
       providesTags: ["Banner"],
+    }),
+    restoreBanner: builder.mutation({
+      query: (id) => ({ url: `/banners/${id}/restore`, method: "PATCH" }),
+      invalidatesTags: ["Banner"],
     }),
     createBanner: builder.mutation({
       query: (body) => ({ url: "/banners", method: "POST", body }),
@@ -39,4 +43,5 @@ export const {
   useListBannersQuery,
   useCreateBannerMutation,
   useDeleteBannerMutation,
+  useRestoreBannerMutation,
 } = pagesApi;
