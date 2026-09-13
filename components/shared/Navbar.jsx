@@ -56,17 +56,17 @@ export default function Navbar() {
             <Menu className="w-6 h-6" />
           </button>
 
-          {/* <Link href="/" className="shrink-0 md:mr-2">
+          <Link href="/" className="shrink-0 md:mr-2">
             <Image
-              src="/assets/logo/logo.png"
+              src="/assets/logo/Cactus Logo-Black.png"
               alt="Enterprise Store"
               width={180}
               height={50}
               priority
-              className="h-7 md:h-10 w-auto"
+              className="h-full w-auto"
             />
-          </Link> */}
-          <Link href="/"  className="text-3xl text-black font-bold">CACTUS</Link>
+          </Link>
+          {/* <Link href="/"  className="text-3xl text-black font-bold">CACTUS</Link> */}
 
           {/* Desktop search */}
           <form
